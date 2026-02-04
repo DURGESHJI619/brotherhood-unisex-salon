@@ -113,7 +113,9 @@ form input:not([type="submit"]), form textarea { padding: 20px 20px; background:
 .hero-slider .slides:after { content: " "; clear: both; display: block; overflow: hidden; height: 0; }
 .hero-slider .slides li { margin-right: -100%; width: 100%; float: left; background-size: cover; min-height: 860px; background-position: center center; padding-top: 200px; }
 .hero-slider .slides .slider-subtitle { font-size: 30px; font-size: 1.875rem; color: rgb(255, 255, 255); text-transform: uppercase; font-weight: 300; font-family: "Novecento Sans", "Open Sans", sans-serif; margin: 0; line-height: 1; }
-.hero-slider .slides .slider-title { color: #cc7250; font-size: 90px; font-size: 5.625rem; font-weight: 300; font-family: "Novecento Sans", "Open Sans", sans-serif; text-transform: uppercase; margin: 0 0 30px; line-height: 1; background-image: -webkit-linear-gradient(90deg, #cc7250, #f7d0c2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; word-break: break-all; }
+.hero-slider .slides .slider-title { color: #cc7250; font-size: 90px; font-size: 5.625rem; font-weight: 300; font-family: "Novecento Sans", "Open Sans", sans-serif; text-transform: uppercase; margin: 0 0 30px; line-height: 1; background-image: -webkit-linear-gradient(90deg, #cc7250, #f7d0c2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; word-break: normal;
+white-space: normal;
+ }
 .hero-slider .slides p { width: 50%; margin-bottom: 50px; }
 @media screen and (max-width: 990px) { .hero-slider .slides p { width: 100%; } }
 .hero-slider .flex-control-paging { position: absolute; bottom: 0; z-index: 9; bottom: 30px; width: 100%; text-align: center; }
@@ -683,3 +685,35 @@ img { max-width: 100%; }
 .widget.contact-widget address .icon, .widget.contact-widget .mail .icon, .widget.contact-widget .phone .icon { position: absolute; left: 0; top: 5px; }
 
 .colophon { font-size: 14px; font-size: 0.875rem; text-align: center; padding: 30px 0 0; }
+@media screen and (max-width: 768px) {
+
+    .hero-slider .slides {
+        padding-top: 140px;
+        text-align: center;
+    }
+
+    .hero-slider .slides .slider-title {
+        font-size: 38px;
+        line-height: 1.2;
+        word-break: normal;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .hero-slider .slides .slider-subtitle {
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .hero-slider .slides p {
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .hero-slider .button {
+        display: inline-block;
+    }
+}
