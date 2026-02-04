@@ -717,3 +717,35 @@ img { max-width: 100%; }
         display: inline-block;
     }
 }
+/* ===== MOBILE HERO FIX ===== */
+@media only screen and (max-width: 600px) {
+
+    .hero-slider .slides li {
+        min-height: auto;
+        padding-top: 130px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+
+    .hero-slider .slides .slider-title {
+        font-size: 34px !important;
+        line-height: 1.25;
+        word-break: keep-all !important;
+        overflow-wrap: normal !important;
+        white-space: normal !important;
+        text-align: center;
+    }
+
+    .hero-slider .slides .slider-subtitle {
+        font-size: 16px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+    .hero-slider .slides p {
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+}
